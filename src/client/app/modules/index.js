@@ -1,11 +1,12 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { Router, Route, hashHistory, IndexRoute } from 'react-router'
-import App from './App'
-import About from './About'
-import Skills from './Skills'
-import Projects from './Projects'
-import Contact from './Contact'
+import App from './App/App'
+import About from './About/About'
+import Skills from './Skills/Skills'
+import Projects from './Projects/Projects'
+import Contact from './Contact/Contact'
+import styles from './About/about.css'
 
 render((
   <Router history={hashHistory}>
