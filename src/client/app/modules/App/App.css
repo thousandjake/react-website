@@ -2,13 +2,17 @@
   Main App Styling
 ==================================== */
 
-._2VwZep85w-J7LjLiavdii2 {
+* {
+	box-sizing: border-box;
+}
+
+:local(.wrapper) {
   max-width: 940px;
   margin: 0 auto;
   padding: 0 5%;
 }
 
-._2IvvZZInRobhfflwXzLSx4 {
+:local(.header) {
   display: block;
   float: center;
   text-align: center;
@@ -40,7 +44,7 @@ small {
 
 @media (min-width: 769px) {
 
-  ._2IvvZZInRobhfflwXzLSx4 {
+  :local(.header) {
     display: block;
     float: left;
     text-align: left;
@@ -70,7 +74,7 @@ small {
 
 @media (min-width: 1025px) {
 
-  ._2IvvZZInRobhfflwXzLSx4 {
+  :local(.header) {
     display: block;
     float: left;
     text-align: left;
@@ -98,11 +102,3 @@ small {
   }
 
 }
-/*****************
-PAGE: ABOUT ME
-*****************/
-/*****************
-PAGE: ABOUT ME
-*****************/
-
-/*# sourceMappingURL=bundle.css.map*/

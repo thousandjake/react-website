@@ -61,23 +61,23 @@
 	
 	var _App2 = _interopRequireDefault(_App);
 	
-	var _About = __webpack_require__(/*! ./About/About */ 498);
+	var _About = __webpack_require__(/*! ./About/About */ 499);
 	
 	var _About2 = _interopRequireDefault(_About);
 	
-	var _Skills = __webpack_require__(/*! ./Skills/Skills */ 501);
+	var _Skills = __webpack_require__(/*! ./Skills/Skills */ 502);
 	
 	var _Skills2 = _interopRequireDefault(_Skills);
 	
-	var _Projects = __webpack_require__(/*! ./Projects/Projects */ 502);
+	var _Projects = __webpack_require__(/*! ./Projects/Projects */ 503);
 	
 	var _Projects2 = _interopRequireDefault(_Projects);
 	
-	var _Contact = __webpack_require__(/*! ./Contact/Contact */ 506);
+	var _Contact = __webpack_require__(/*! ./Contact/Contact */ 507);
 	
 	var _Contact2 = _interopRequireDefault(_Contact);
 	
-	var _about = __webpack_require__(/*! ./About/about.css */ 499);
+	var _about = __webpack_require__(/*! ./About/about.css */ 510);
 	
 	var _about2 = _interopRequireDefault(_about);
 	
@@ -26607,6 +26607,10 @@
 	
 	var _reactRouterBootstrap = __webpack_require__(/*! react-router-bootstrap */ 495);
 	
+	var _App = __webpack_require__(/*! ./App.css */ 498);
+	
+	var _App2 = _interopRequireDefault(_App);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	exports.default = _react2.default.createClass({
@@ -26616,56 +26620,64 @@
 	      'div',
 	      null,
 	      _react2.default.createElement(
-	        _reactBootstrap.PageHeader,
-	        null,
-	        'JAKE THOUSAND',
+	        'div',
+	        { className: _App2.default.head },
 	        _react2.default.createElement(
-	          'small',
-	          null,
-	          '   Front-End Developer'
+	          'h1',
+	          { className: _App2.default.header },
+	          'JAKE THOUSAND',
+	          _react2.default.createElement(
+	            'small',
+	            null,
+	            'Front-End Developer'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          _reactBootstrap.Nav,
+	          { bsStyle: 'tabs' },
+	          _react2.default.createElement(
+	            _reactRouterBootstrap.IndexLinkContainer,
+	            { to: { pathname: '/', activeClassName: 'active' } },
+	            _react2.default.createElement(
+	              _reactBootstrap.NavItem,
+	              null,
+	              'About Me'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            _reactRouterBootstrap.LinkContainer,
+	            { to: { pathname: '/skills', activeClassName: 'active' } },
+	            _react2.default.createElement(
+	              _reactBootstrap.NavItem,
+	              null,
+	              'Skills'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            _reactRouterBootstrap.LinkContainer,
+	            { to: { pathname: '/projects', activeClassName: 'active' } },
+	            _react2.default.createElement(
+	              _reactBootstrap.NavItem,
+	              null,
+	              'Projects'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            _reactRouterBootstrap.LinkContainer,
+	            { to: { pathname: '/contact', activeClassName: 'active' } },
+	            _react2.default.createElement(
+	              _reactBootstrap.NavItem,
+	              null,
+	              'Contact'
+	            )
+	          )
 	        )
 	      ),
 	      _react2.default.createElement(
-	        _reactBootstrap.Nav,
-	        { bsStyle: 'tabs' },
-	        _react2.default.createElement(
-	          _reactRouterBootstrap.IndexLinkContainer,
-	          { to: { pathname: '/', activeClassName: 'active' } },
-	          _react2.default.createElement(
-	            _reactBootstrap.NavItem,
-	            null,
-	            'About Me'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactRouterBootstrap.LinkContainer,
-	          { to: { pathname: '/skills', activeClassName: 'active' } },
-	          _react2.default.createElement(
-	            _reactBootstrap.NavItem,
-	            null,
-	            'Skills'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactRouterBootstrap.LinkContainer,
-	          { to: { pathname: '/projects', activeClassName: 'active' } },
-	          _react2.default.createElement(
-	            _reactBootstrap.NavItem,
-	            null,
-	            'Projects'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactRouterBootstrap.LinkContainer,
-	          { to: { pathname: '/contact', activeClassName: 'active' } },
-	          _react2.default.createElement(
-	            _reactBootstrap.NavItem,
-	            null,
-	            'Contact'
-	          )
-	        )
-	      ),
-	      this.props.children
+	        'div',
+	        { className: _App2.default.wrapper },
+	        this.props.children
+	      )
 	    );
 	  }
 	});
@@ -46885,6 +46897,16 @@
 
 /***/ },
 /* 498 */
+/*!********************************************!*\
+  !*** ./src/client/app/modules/App/App.css ***!
+  \********************************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"wrapper":"_2VwZep85w-J7LjLiavdii2","header":"_2IvvZZInRobhfflwXzLSx4"};
+
+/***/ },
+/* 499 */
 /*!***********************************************!*\
   !*** ./src/client/app/modules/About/About.js ***!
   \***********************************************/
@@ -46902,11 +46924,11 @@
 	
 	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 230);
 	
-	var _about = __webpack_require__(/*! ./about.css */ 499);
+	var _About = __webpack_require__(/*! ./About.css */ 500);
 	
-	var _about2 = _interopRequireDefault(_about);
+	var _About2 = _interopRequireDefault(_About);
 	
-	var _profile = __webpack_require__(/*! ./profile.jpg */ 500);
+	var _profile = __webpack_require__(/*! ./profile.jpg */ 501);
 	
 	var _profile2 = _interopRequireDefault(_profile);
 	
@@ -46917,7 +46939,7 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      { className: _about2.default.wrapper },
+	      null,
 	      _react2.default.createElement(
 	        'h1',
 	        null,
@@ -46959,17 +46981,16 @@
 	});
 
 /***/ },
-/* 499 */
+/* 500 */
 /*!************************************************!*\
-  !*** ./src/client/app/modules/About/about.css ***!
+  !*** ./src/client/app/modules/About/About.css ***!
   \************************************************/
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"wrapper":"_2Gn-h8t495ttKPj7tiVkFS","profile":"_3ZFUHy_mS-Vt_jzrD38w3_"};
 
 /***/ },
-/* 500 */
+/* 501 */
 /*!**************************************************!*\
   !*** ./src/client/app/modules/About/profile.jpg ***!
   \**************************************************/
@@ -46978,7 +46999,7 @@
 	module.exports = __webpack_require__.p + "src/client/app/modules/About/profile.c961c3b1b0c13ac40f63868fabe7f2b9.jpg";
 
 /***/ },
-/* 501 */
+/* 502 */
 /*!*************************************************!*\
   !*** ./src/client/app/modules/Skills/Skills.js ***!
   \*************************************************/
@@ -47243,7 +47264,7 @@
 	});
 
 /***/ },
-/* 502 */
+/* 503 */
 /*!*****************************************************!*\
   !*** ./src/client/app/modules/Projects/Projects.js ***!
   \*****************************************************/
@@ -47261,15 +47282,15 @@
 	
 	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 230);
 	
-	var _projectone = __webpack_require__(/*! ./projectone.jpg */ 503);
+	var _projectone = __webpack_require__(/*! ./projectone.jpg */ 504);
 	
 	var _projectone2 = _interopRequireDefault(_projectone);
 	
-	var _projecttwo = __webpack_require__(/*! ./projecttwo.jpg */ 504);
+	var _projecttwo = __webpack_require__(/*! ./projecttwo.jpg */ 505);
 	
 	var _projecttwo2 = _interopRequireDefault(_projecttwo);
 	
-	var _projectthree = __webpack_require__(/*! ./projectthree.jpg */ 505);
+	var _projectthree = __webpack_require__(/*! ./projectthree.jpg */ 506);
 	
 	var _projectthree2 = _interopRequireDefault(_projectthree);
 	
@@ -47296,7 +47317,6 @@
 	        null,
 	        'Search and Pick Cards from the API to build a deck'
 	      ),
-	      _react2.default.createElement(_reactBootstrap.Image, { responsive: true, src: _projectone2.default }),
 	      _react2.default.createElement(
 	        'div',
 	        null,
@@ -47321,6 +47341,7 @@
 	          'WebAPI'
 	        )
 	      ),
+	      _react2.default.createElement(_reactBootstrap.Image, { responsive: true, src: _projectone2.default }),
 	      _react2.default.createElement(
 	        'h4',
 	        null,
@@ -47331,7 +47352,6 @@
 	        null,
 	        'You are not prepared!!!!'
 	      ),
-	      _react2.default.createElement(_reactBootstrap.Image, { responsive: true, src: _projecttwo2.default }),
 	      _react2.default.createElement(
 	        'div',
 	        null,
@@ -47361,6 +47381,7 @@
 	          'JSON'
 	        )
 	      ),
+	      _react2.default.createElement(_reactBootstrap.Image, { responsive: true, src: _projecttwo2.default }),
 	      _react2.default.createElement(
 	        'h4',
 	        null,
@@ -47371,7 +47392,6 @@
 	        null,
 	        'tricky problems for only the trillest coders'
 	      ),
-	      _react2.default.createElement(_reactBootstrap.Image, { responsive: true, src: _projectthree2.default }),
 	      _react2.default.createElement(
 	        'div',
 	        null,
@@ -47395,13 +47415,14 @@
 	          null,
 	          'Recursion'
 	        )
-	      )
+	      ),
+	      _react2.default.createElement(_reactBootstrap.Image, { responsive: true, src: _projectthree2.default })
 	    );
 	  }
 	});
 
 /***/ },
-/* 503 */
+/* 504 */
 /*!********************************************************!*\
   !*** ./src/client/app/modules/Projects/projectone.jpg ***!
   \********************************************************/
@@ -47410,7 +47431,7 @@
 	module.exports = __webpack_require__.p + "src/client/app/modules/Projects/projectone.0ce323173af63d3515a75004f29550dd.jpg";
 
 /***/ },
-/* 504 */
+/* 505 */
 /*!********************************************************!*\
   !*** ./src/client/app/modules/Projects/projecttwo.jpg ***!
   \********************************************************/
@@ -47419,7 +47440,7 @@
 	module.exports = __webpack_require__.p + "src/client/app/modules/Projects/projecttwo.cf966573786cd58e40ec92aa76a63f28.jpg";
 
 /***/ },
-/* 505 */
+/* 506 */
 /*!**********************************************************!*\
   !*** ./src/client/app/modules/Projects/projectthree.jpg ***!
   \**********************************************************/
@@ -47428,7 +47449,7 @@
 	module.exports = __webpack_require__.p + "src/client/app/modules/Projects/projectthree.7e9397facba38c4af578cf7a4eb99e50.jpg";
 
 /***/ },
-/* 506 */
+/* 507 */
 /*!***************************************************!*\
   !*** ./src/client/app/modules/Contact/Contact.js ***!
   \***************************************************/
@@ -47444,11 +47465,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _jquery = __webpack_require__(/*! jquery */ 507);
+	var _jquery = __webpack_require__(/*! jquery */ 508);
 	
 	var _jquery2 = _interopRequireDefault(_jquery);
 	
-	var _ContactForm = __webpack_require__(/*! ./ContactForm */ 508);
+	var _ContactForm = __webpack_require__(/*! ./ContactForm */ 509);
 	
 	var _ContactForm2 = _interopRequireDefault(_ContactForm);
 	
@@ -47487,7 +47508,7 @@
 	});
 
 /***/ },
-/* 507 */
+/* 508 */
 /*!*********************************!*\
   !*** ./~/jquery/dist/jquery.js ***!
   \*********************************/
@@ -57533,7 +57554,7 @@
 
 
 /***/ },
-/* 508 */
+/* 509 */
 /*!*******************************************************!*\
   !*** ./src/client/app/modules/Contact/ContactForm.js ***!
   \*******************************************************/
@@ -57624,6 +57645,15 @@
 	    );
 	  }
 	});
+
+/***/ },
+/* 510 */
+/*!************************************************!*\
+  !*** ./src/client/app/modules/About/about.css ***!
+  \************************************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
 
 /***/ }
 /******/ ]);

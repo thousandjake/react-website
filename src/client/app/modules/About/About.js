@@ -1,12 +1,12 @@
 import React from 'react';
 import { Image } from 'react-bootstrap';
-import styles from './about.css';
+import styles from './About.css';
 import profile from './profile.jpg';
 
 export default React.createClass({
   render() {
     return (
-      <div className={styles.wrapper}>
+      <div>
         <h1>About Me</h1>
         <Image responsive src={profile}/>
         <h3>A Little Bit About Me!</h3>
