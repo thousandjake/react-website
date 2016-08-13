@@ -21,8 +21,10 @@ export default React.createClass({
   render() {
     return (
       <div>
-        <h1>Call Me Maybe!</h1>
-        <ContactForm onContactFormSubmit={this.handleContactFormSubmit}/>
+        <h3>Call Me Maybe!</h3>
+        <div className='form'>
+          <ContactForm onContactFormSubmit={this.handleContactFormSubmit}/>
+        </div>
       </div>
     );
   }
