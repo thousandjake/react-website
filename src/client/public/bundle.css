@@ -54,6 +54,7 @@ small {
 
 ul {
 	list-style-type: disc;
+	list-style-position: inside;
 }
 
 .nav {
@@ -154,7 +155,6 @@ ul {
 
 	.nav li {
 		display: inline-block;
-		float: right;
 		font-size: .75em;
 		width: auto;
 	}
