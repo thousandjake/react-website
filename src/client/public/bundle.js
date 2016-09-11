@@ -28625,7 +28625,7 @@
 	          _react2.default.createElement(
 	            'a',
 	            { href: 'https://github.com/thousandjake' },
-	            'my github'
+	            ' My Github'
 	          ),
 	          _react2.default.createElement(
 	            'span',
@@ -28650,11 +28650,7 @@
 	        _react2.default.createElement(
 	          'a',
 	          { href: 'https://github.com/thousandjake/js-wow-quiz' },
-	          _react2.default.createElement(
-	            'strong',
-	            null,
-	            ' - Quiz Project Github Page'
-	          )
+	          'Quiz Project Github Page'
 	        ),
 	        _react2.default.createElement(
 	          'ul',
@@ -28707,20 +28703,17 @@
 	        _react2.default.createElement(
 	          'a',
 	          { href: 'https://github.com/thousandjake/hearthstone-project' },
-	          _react2.default.createElement(
-	            'strong',
-	            null,
-	            ' - Deckbuilder Project Github Page'
-	          )
+	          'Deckbuilder Project Github Page'
+	        ),
+	        _react2.default.createElement(
+	          'span',
+	          null,
+	          ' - '
 	        ),
 	        _react2.default.createElement(
 	          'a',
 	          { href: 'http://hearthstoneapi.com/' },
-	          _react2.default.createElement(
-	            'strong',
-	            null,
-	            ' - HearthstoneAPI Website'
-	          )
+	          'HearthstoneAPI Website'
 	        ),
 	        _react2.default.createElement(
 	          'ul',
@@ -28768,20 +28761,17 @@
 	        _react2.default.createElement(
 	          'a',
 	          { href: 'https://github.com/thousandjake/euler-project-problems' },
-	          _react2.default.createElement(
-	            'strong',
-	            null,
-	            ' - My Euler Problems Github Page'
-	          )
+	          'My Euler Problems Github Page'
+	        ),
+	        _react2.default.createElement(
+	          'span',
+	          null,
+	          ' - '
 	        ),
 	        _react2.default.createElement(
 	          'a',
 	          { href: 'https://projecteuler.net/' },
-	          _react2.default.createElement(
-	            'strong',
-	            null,
-	            ' - Project Euler Website'
-	          )
+	          'Project Euler Website'
 	        ),
 	        _react2.default.createElement(
 	          'ul',
@@ -28910,30 +28900,19 @@
 	            'I am currently pursuing a junior/entry-level Front-End Development opportunites!  Please feel free to send me a quick email via the contact form or reach out to me on social media regarding employement opportunities, cool open-source projects, or general questions about my work.'
 	          ),
 	          _react2.default.createElement(
-	            'p',
-	            null,
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'https://github.com/thousandjake' },
-	              _react2.default.createElement(
-	                'strong',
-	                null,
-	                'My Github'
-	              )
-	            )
+	            'a',
+	            { href: 'https://github.com/thousandjake' },
+	            'My Github'
 	          ),
 	          _react2.default.createElement(
-	            'p',
+	            'span',
 	            null,
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'https://www.linkedin.com/in/jacob-thousand-a3a8a191' },
-	              _react2.default.createElement(
-	                'strong',
-	                null,
-	                'My Linkedin'
-	              )
-	            )
+	            ' - '
+	          ),
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'https://www.linkedin.com/in/jacob-thousand-a3a8a191' },
+	            'My Linkedin'
 	          )
 	        ),
 	        _react2.default.createElement(

@@ -15,6 +15,7 @@ midnight = #061339
 
 a {
 	color: #7986AC;
+	font-weight: bold;
 }
 
 body {
@@ -25,8 +26,8 @@ body {
 
 h1,
 h2,
-h3,
-a {
+h3
+{
 	color: #061339;
 }
 
