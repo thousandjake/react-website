@@ -14,8 +14,7 @@ midnight = #061339
 }
 
 a {
-	text-decoration: none;
-	color: #061339;
+	color: #7986AC;
 }
 
 body {
@@ -86,6 +85,7 @@ ul {
 	background-color: #50608F;
 	color: white;
 	text-transform: uppercase;
+	text-decoration: none;
 }
 
 .nav a:hover {
@@ -156,6 +156,7 @@ textarea:invalid {
 }
 
 .skills li {
+	display: inline;
 	border-radius: 25px;
 	text-align: center;
 	padding: 10px 15px;
@@ -210,10 +211,6 @@ textarea:invalid {
 		display: inline-block;
 		font-size: .75em;
 		width: auto;
-	}
-
-	.skills li{
-		display: inline-block;
 	}
 
 	.title {

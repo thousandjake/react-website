@@ -28274,7 +28274,7 @@
 	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'I am a young professional living in the city of Chicago.  I received a bachelor of science in Applied Engineering Sciences from Michigan State University.  I have been working in Supply Chain Management for the past 5 years but am now looking to transition into a career in Front-End Development.  When I\'m not writing code or learning about new web tech, you can find me hiking, playing disc golf, or pc gaming with friends.'
+	            'I am a young professional living in the city of Chicago.  I received a Bachelor of Science in Applied Engineering Sciences from Michigan State University.  I have been working in Supply Chain Management for the past 5 years but am now looking to transition into a career in Front-End Development.  When I\'m not writing code or learning about new web tech, you can find me hiking, playing disc golf, or pc gaming with friends.'
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -28288,7 +28288,7 @@
 	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'In highschool and college I had classes on C++, Java, and Matlab.  I enjoyed learning the languages, learning common design patterns, and using my technical problem solving skills.  In college I decided to go with a more generalized engineering degree and ended up working in Supply Chain Management after school.  I wasn\'t feeling completely satisfied working in SCM as the challenges I faced were not very technical or complex in nature and oftern revolved around manufacturing constraints or working with bad sales forecasting.  In speaking with a friend of mine about wanting to pursue a different carrer path (possibly going back to school to pursue a computer science degree), he suggested I give javascript a try and see how I liked web development.  After reading up on the language and completing a few tutorials I was hooked.  A year later I\'m now writing code or reading about new web technologies on a daily basis.  I will find  myself on MDN or writing out pseudocode to solve a problem that\'s been bugging me at random times throughout the day.  I love the open source nature of web technology, the countless free resources and forums for learning and solving problems online, and the constant flow of new technology being released that is furthering what web developers are capable of doing.'
+	            'The short version of why I started to get into Web Dev is that I love to learn new things!  I had started to feel like my current position was getting kind of stale as I was performing well but didn\'t feel that I was growing or very engaged in day to day tasks.  A friend of mine recommended I check out learning a development language and giving some free online courses a try.  After reading up on the language and completing a few tutorials I was hooked.  A year later I\'m now writing code or reading about new web technologies on a daily basis.  I will find  myself on MDN or writing out pseudocode to solve a problem that\'s been bugging me at random times throughout the day.  I love the open source nature of web technology, the countless free resources and forums for learning and solving problems online, and the constant flow of new technology being released that is furthering what web developers are capable of doing.'
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -28302,7 +28302,7 @@
 	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'Now that I have been studying web development for over a year, I feel confident in my skills and have started pursuing a junior/entry-level Front-End Development opportunites.  My ideal position would be a front-end developer role within a large team of developers within the tech industry.  I want to be in a position where I can be a highly effective and contributing member of the team while also learning from my teammates and "leveling-up" my development skills.  If you have a position available or would like to contact me about projects, please see my contact page!'
+	            'Now that I have been studying web development for over a year, I feel confident in my skills and have started pursuing junior/entry-level Front-End Development opportunites.  My ideal position would be a front-end developer role within a large team of developers within the tech industry.  I want to be in a position where I can be a highly effective and contributing member of the team while also learning from my teammates and "leveling-up" my development skills.  If you have a position available or would like to contact me about projects, please see my contact page!'
 	          )
 	        )
 	      )
@@ -28617,78 +28617,83 @@
 	        _react2.default.createElement(
 	          'p',
 	          null,
-	          'I\'ve created a couple projects and refactored them over time to build and hone my skills in HTML, CSS, and Javascript.  A few of my projects are shown below and you are also using one of them now.  This website was built from scratch using React and Webpack!  If you\'d like to see any of my other code, please visit my github or contact me using the contact form on my contact page.  '
+	          _react2.default.createElement(
+	            'span',
+	            null,
+	            'I\'ve created a couple projects and refactored them over time to build and hone my skills in HTML, CSS, and Javascript.  A few of my projects are shown below and you are also using one of them now!  This website was built from scratch using React and Webpack.  If you\'d like to see any of my other code, please visit'
+	          ),
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'https://github.com/thousandjake' },
+	            'my github'
+	          ),
+	          _react2.default.createElement(
+	            'span',
+	            null,
+	            ' or contact me using the contact form on my contact page.'
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'h4',
+	          null,
+	          'Project 1 - World of Warcraft Quiz'
 	        ),
 	        _react2.default.createElement(
 	          'p',
 	          null,
+	          'This was one of the first projects I worked on.  It is a 20 question quiz based on the game world of warcraft.  The quiz was originally done with JQUERY and gave a score at the end.  All of the questions were stored in a JSON filed and retrieved with an AJAX call when the app loaded.  While learning the basics of AngularJS I refactored the quiz and added two way binding to update the user\'s score after each question was answered or updated.'
+	        ),
+	        _react2.default.createElement(
+	          'a',
+	          { href: 'https://github.com/thousandjake/js-wow-quiz' },
 	          _react2.default.createElement(
-	            'a',
-	            { href: 'https://github.com/thousandjake' },
-	            _react2.default.createElement(
-	              'strong',
-	              null,
-	              'My Github'
-	            )
+	            'strong',
+	            null,
+	            ' - Quiz Project Github Page'
 	          )
 	        ),
 	        _react2.default.createElement(
-	          'div',
-	          null,
+	          'ul',
+	          { className: 'skills' },
 	          _react2.default.createElement(
-	            'h4',
+	            'li',
 	            null,
-	            'Project 1 - World of Warcraft Quiz'
+	            'Javascript'
 	          ),
 	          _react2.default.createElement(
-	            'p',
+	            'li',
 	            null,
-	            'This was one of the first projects I worked on.  It is a 20 question quiz based on the game world of warcraft.  The quiz was originally done with JQUERY and gave a score at the end.  All of the questions were stored in a JSON filed and retrieved with an AJAX call when the app loaded.  While learning the basics of AngularJS I refactored the quiz and added two way binding to update the user\'s score after each question was answered or updated.'
+	            'AngularJS'
 	          ),
 	          _react2.default.createElement(
-	            'p',
+	            'li',
 	            null,
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'https://github.com/thousandjake/js-wow-quiz' },
-	              _react2.default.createElement(
-	                'strong',
-	                null,
-	                'Project Github Page'
-	              )
-	            )
+	            'AJAX'
 	          ),
 	          _react2.default.createElement(
-	            'ul',
-	            { className: 'skills' },
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'Javascript'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'AngularJS'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'AJAX'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'Node.js'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'JSON'
-	            )
+	            'li',
+	            null,
+	            'Node.js'
 	          ),
-	          _react2.default.createElement('img', { className: 'projectTwo', src: _projecttwo2.default, alt: 'World of Warcraft Quiz' })
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            'JSON'
+	          )
 	        ),
+	        _react2.default.createElement(
+	          'a',
+	          { href: 'https://github.com/thousandjake/js-wow-quiz' },
+	          _react2.default.createElement('img', { className: 'projectTwo', src: _projecttwo2.default, alt: 'World of Warcraft Quiz' })
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        null,
 	        _react2.default.createElement(
 	          'h4',
 	          null,
@@ -28700,29 +28705,21 @@
 	          'The goal of this project was to create an application that would allow the user to search the library of cards from the popular game Hearthstone.  The user could then select a class and cards to build a 30 card deck.  The card data in the application is received from an AJAX call to a Hearthstone API (website below).  The app was originally written in plain javascript using a subscribe / dispatch pattern to trigger callbacks when an event was dispatched.  I refactored the code using AngularJS while learning Angular.'
 	        ),
 	        _react2.default.createElement(
-	          'p',
-	          null,
+	          'a',
+	          { href: 'https://github.com/thousandjake/hearthstone-project' },
 	          _react2.default.createElement(
-	            'a',
-	            { href: 'https://github.com/thousandjake/hearthstone-project' },
-	            _react2.default.createElement(
-	              'strong',
-	              null,
-	              'Project Github Page'
-	            )
+	            'strong',
+	            null,
+	            ' - Deckbuilder Project Github Page'
 	          )
 	        ),
 	        _react2.default.createElement(
-	          'p',
-	          null,
+	          'a',
+	          { href: 'http://hearthstoneapi.com/' },
 	          _react2.default.createElement(
-	            'a',
-	            { href: 'http://hearthstoneapi.com/' },
-	            _react2.default.createElement(
-	              'strong',
-	              null,
-	              'HearthstoneAPI'
-	            )
+	            'strong',
+	            null,
+	            ' - HearthstoneAPI Website'
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -28749,7 +28746,11 @@
 	            'WebAPI'
 	          )
 	        ),
-	        _react2.default.createElement('img', { className: 'projectOne', src: _projectone2.default, alt: 'Hearthstone Deckbuilder Project' })
+	        _react2.default.createElement(
+	          'a',
+	          { href: 'https://github.com/thousandjake/hearthstone-project' },
+	          _react2.default.createElement('img', { className: 'projectOne', src: _projectone2.default, alt: 'Hearthstone Deckbuilder Project' })
+	        )
 	      ),
 	      _react2.default.createElement(
 	        'div',
@@ -28762,32 +28763,24 @@
 	        _react2.default.createElement(
 	          'p',
 	          null,
-	          'Euler Problems are not so much a project as they are a fun way to solve complex math equations using coding.  I\'ve been working through the problems online to test my javascript skills as well as a way to learn the basics of test-driven development.  I approach each problem first writing tests in Jasmine / Karma to describe the solution.  I then work through coding a solution to the problem that passes the tests.  You can see my code for the problems via the Github link below.'
+	          'Project Euler Problems are not so much a project as they are a fun way to solve complex math equations using coding.  I\'ve been working through the problems online to test my javascript skills as well as a way to learn the basics of test-driven development.  I approach each problem first writing tests in Jasmine / Karma to describe the solution.  I then work through coding a solution to the problem that passes the tests.  You can see my code for the problems via the Github link below.'
 	        ),
 	        _react2.default.createElement(
-	          'p',
-	          null,
+	          'a',
+	          { href: 'https://github.com/thousandjake/euler-project-problems' },
 	          _react2.default.createElement(
-	            'a',
-	            { href: 'https://github.com/thousandjake/euler-project-problems' },
-	            _react2.default.createElement(
-	              'strong',
-	              null,
-	              'Project Github Page'
-	            )
+	            'strong',
+	            null,
+	            ' - My Euler Problems Github Page'
 	          )
 	        ),
 	        _react2.default.createElement(
-	          'p',
-	          null,
+	          'a',
+	          { href: 'https://projecteuler.net/' },
 	          _react2.default.createElement(
-	            'a',
-	            { href: 'https://projecteuler.net/' },
-	            _react2.default.createElement(
-	              'strong',
-	              null,
-	              'Project Euler'
-	            )
+	            'strong',
+	            null,
+	            ' - Project Euler Website'
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -28814,7 +28807,11 @@
 	            'Recursion'
 	          )
 	        ),
-	        _react2.default.createElement('img', { className: 'projectThree', src: _projectthree2.default, alt: 'Project Euler Code' })
+	        _react2.default.createElement(
+	          'a',
+	          { href: 'https://github.com/thousandjake/euler-project-problems' },
+	          _react2.default.createElement('img', { className: 'projectThree', src: _projectthree2.default, alt: 'Project Euler Code' })
+	        )
 	      )
 	    );
 	  }
