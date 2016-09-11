@@ -38,6 +38,7 @@ export default React.createClass({
     return (
       <form className="contactForm" onSubmit={this.handleSubmit}>
         <input
+          required
           type="text"
           placeholder="Your name"
           value={this.setState.person}
@@ -45,6 +46,7 @@ export default React.createClass({
           onChange={this.handlePersonChange}
         />
         <input
+          required
           type="text"
           placeholder="Your Company"
           value={this.setState.company}
@@ -52,6 +54,7 @@ export default React.createClass({
           onChange={this.handleCompanyChange}
         />
         <input
+          required
           type="email"
           placeholder="Your Email"
           value={this.setState.email}
@@ -59,6 +62,7 @@ export default React.createClass({
           onChange={this.handleEmailChange}
         />
       <textarea
+          required
           name="message"
           placeholder="Your Message"
           value={this.setState.company}

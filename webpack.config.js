@@ -14,9 +14,11 @@ var config = {
   module : {
     loaders : [
       {
-        test : /\.js$/,
-        include : APP_DIR,
-        loader : 'babel'
+        test: /.jsx?$/,
+        loader: 'babel-loader',
+        query: {
+          presets: [ 'es2015', 'react', 'stage-2']
+        }
       },
       {
         test : /\.css$/,
@@ -25,6 +27,10 @@ var config = {
       {
         test: /\.(jpg|png)$/,
         loader: 'file?name=[path][name].[hash].[ext]',
+      },
+      {
+        test: /\.svg$/,
+        loader: 'file',
       }
     ]
   },
