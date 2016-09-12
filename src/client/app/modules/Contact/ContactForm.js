@@ -40,9 +40,8 @@ export default React.createClass({
         <input
           required
           type="text"
-          placeholder="Your name"
+          placeholder="Your Name"
           value={this.setState.person}
-          required size="40"
           onChange={this.handlePersonChange}
         />
         <input
@@ -50,7 +49,6 @@ export default React.createClass({
           type="text"
           placeholder="Your Company"
           value={this.setState.company}
-          required size="40"
           onChange={this.handleCompanyChange}
         />
         <input
@@ -58,7 +56,6 @@ export default React.createClass({
           type="email"
           placeholder="Your Email"
           value={this.setState.email}
-          required size="40"
           onChange={this.handleEmailChange}
         />
       <textarea
@@ -66,7 +63,7 @@ export default React.createClass({
           name="message"
           placeholder="Your Message"
           value={this.setState.company}
-          required cols="40"
+          cols="80"
           rows="10"
           onChange={this.handleMessageChange}
         />

@@ -46,6 +46,13 @@ input {
 	display: block;
 }
 
+input[type=text],
+input[type=email],
+textarea
+{
+	width: 90%;
+}
+
 textarea {
 	display: block;
 }

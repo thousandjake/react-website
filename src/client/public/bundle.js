@@ -28658,22 +28658,12 @@
 	          _react2.default.createElement(
 	            'li',
 	            null,
-	            'Javascript'
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
 	            'AngularJS'
 	          ),
 	          _react2.default.createElement(
 	            'li',
 	            null,
 	            'AJAX'
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            'Node.js'
 	          ),
 	          _react2.default.createElement(
 	            'li',
@@ -28721,22 +28711,17 @@
 	          _react2.default.createElement(
 	            'li',
 	            null,
-	            'Javascript'
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
 	            'AngularJS'
 	          ),
 	          _react2.default.createElement(
 	            'li',
 	            null,
-	            'AJAX'
+	            'WebAPI'
 	          ),
 	          _react2.default.createElement(
 	            'li',
 	            null,
-	            'WebAPI'
+	            'Node.JS'
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -28776,11 +28761,6 @@
 	        _react2.default.createElement(
 	          'ul',
 	          { className: 'skills' },
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            'Javascript'
-	          ),
 	          _react2.default.createElement(
 	            'li',
 	            null,
@@ -30593,8 +30573,6 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-	
 	exports.default = _react2.default.createClass({
 	  displayName: 'ContactForm',
 	
@@ -30632,35 +30610,39 @@
 	    this.setState({ person: '', company: '', email: '', message: '' });
 	  },
 	  render: function render() {
-	    var _React$createElement, _React$createElement2, _React$createElement3, _React$createElement4;
-	
 	    return _react2.default.createElement(
 	      'form',
 	      { className: 'contactForm', onSubmit: this.handleSubmit },
-	      _react2.default.createElement('input', (_React$createElement = {
+	      _react2.default.createElement('input', {
 	        required: true,
 	        type: 'text',
-	        placeholder: 'Your name',
-	        value: this.setState.person
-	      }, _defineProperty(_React$createElement, 'required', true), _defineProperty(_React$createElement, 'size', '40'), _defineProperty(_React$createElement, 'onChange', this.handlePersonChange), _React$createElement)),
-	      _react2.default.createElement('input', (_React$createElement2 = {
+	        placeholder: 'Your Name',
+	        value: this.setState.person,
+	        onChange: this.handlePersonChange
+	      }),
+	      _react2.default.createElement('input', {
 	        required: true,
 	        type: 'text',
 	        placeholder: 'Your Company',
-	        value: this.setState.company
-	      }, _defineProperty(_React$createElement2, 'required', true), _defineProperty(_React$createElement2, 'size', '40'), _defineProperty(_React$createElement2, 'onChange', this.handleCompanyChange), _React$createElement2)),
-	      _react2.default.createElement('input', (_React$createElement3 = {
+	        value: this.setState.company,
+	        onChange: this.handleCompanyChange
+	      }),
+	      _react2.default.createElement('input', {
 	        required: true,
 	        type: 'email',
 	        placeholder: 'Your Email',
-	        value: this.setState.email
-	      }, _defineProperty(_React$createElement3, 'required', true), _defineProperty(_React$createElement3, 'size', '40'), _defineProperty(_React$createElement3, 'onChange', this.handleEmailChange), _React$createElement3)),
-	      _react2.default.createElement('textarea', (_React$createElement4 = {
+	        value: this.setState.email,
+	        onChange: this.handleEmailChange
+	      }),
+	      _react2.default.createElement('textarea', {
 	        required: true,
 	        name: 'message',
 	        placeholder: 'Your Message',
-	        value: this.setState.company
-	      }, _defineProperty(_React$createElement4, 'required', true), _defineProperty(_React$createElement4, 'cols', '40'), _defineProperty(_React$createElement4, 'rows', '10'), _defineProperty(_React$createElement4, 'onChange', this.handleMessageChange), _React$createElement4)),
+	        value: this.setState.company,
+	        cols: '80',
+	        rows: '10',
+	        onChange: this.handleMessageChange
+	      }),
 	      _react2.default.createElement('input', { type: 'submit', value: 'Submit' })
 	    );
 	  }

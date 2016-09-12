@@ -20,10 +20,8 @@ export default React.createClass({
           <p>This was one of the first projects I worked on.  It is a 20 question quiz based on the game world of warcraft.  The quiz was originally done with JQUERY and gave a score at the end.  All of the questions were stored in a JSON filed and retrieved with an AJAX call when the app loaded.  While learning the basics of AngularJS I refactored the quiz and added two way binding to update the user's score after each question was answered or updated.</p>
           <a href="https://github.com/thousandjake/js-wow-quiz">Quiz Project Github Page</a>
           <ul className='skills'>
-            <li>Javascript</li>
             <li>AngularJS</li>
             <li>AJAX</li>
-            <li>Node.js</li>
             <li>JSON</li>
           </ul>
           <a href="https://github.com/thousandjake/js-wow-quiz">
@@ -37,10 +35,9 @@ export default React.createClass({
           <span> - </span>
           <a href="http://hearthstoneapi.com/">HearthstoneAPI Website</a>
           <ul className='skills'>
-            <li>Javascript</li>
             <li>AngularJS</li>
-            <li>AJAX</li>
             <li>WebAPI</li>
+            <li>Node.JS</li>
           </ul>
           <a href="https://github.com/thousandjake/hearthstone-project">
             <img className='projectOne' src={projectOne} alt='Hearthstone Deckbuilder Project'/>
@@ -53,7 +50,6 @@ export default React.createClass({
           <span> - </span>
           <a href="https://projecteuler.net/">Project Euler Website</a>
           <ul className='skills'>
-            <li>Javascript</li>
             <li>Looping</li>
             <li>Array Manipulation</li>
             <li>Recursion</li>
