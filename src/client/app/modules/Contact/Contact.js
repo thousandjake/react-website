@@ -4,6 +4,8 @@ import ContactForm from './ContactForm'
 
 export default React.createClass({
   handleContactFormSubmit: function (contactData) {
+    var submitStatus = document.getElementById('submitStatus');
+    submitStatus.innerHTML = '';
     console.log(contactData);
     $.ajax({
       url: '/contactMessage',
@@ -12,9 +14,13 @@ export default React.createClass({
       data: contactData,
       success: function(data) {
         console.log(data);
+        submitStatus.setAttribute('status','success');
+        submitStatus.innerHTML = 'Form Successfully Submitted!';
       }.bind(this),
       error: function(xhr, status, err) {
         console.error(this.props.url, status, err.toString());
+        submitStatus.setAttribute('status','error');
+        submitStatus.innerHTML = 'Sumission Error: ' + err.toString();
       }.bind(this)
     });
   },

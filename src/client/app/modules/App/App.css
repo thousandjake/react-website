@@ -156,6 +156,16 @@ textarea:invalid {
 	border-style: double;
 }
 
+#submitStatus[status="success"] {
+	color: forestgreen;
+	background-color: lightgreen;
+}
+
+#submitStatus[status="error"] {
+	color: firebrick;
+	background-color: tomato;
+}
+
 /* ---- Layout Containers ---- */
 
 

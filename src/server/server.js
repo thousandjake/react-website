@@ -13,6 +13,7 @@ app.use(express.static('src/client/public'));
 app.use(express.static('node_modules'));
 
 var INDEX_FILE = path.join(__dirname, '../client/index.html');
+var PASS = 'LaCroix4';
 
 app.get('/*', function (req, res, next){
   res.setHeader('Last-Modified', (new Date()).toUTCString());
@@ -30,7 +31,7 @@ app.post('/contactMessage', function(req, res){
     service: 'yahoo',
     auth: {
       user: 'HomemadeChampagneJade@yahoo.com',
-      pass: 'LaCroix4'
+      pass: 'WRONGPASS'
     }
   });
 
@@ -48,6 +49,7 @@ app.post('/contactMessage', function(req, res){
   smtpTrans.sendMail(mailOpts, function(error, info) {
     if(error){
       console.log(error);
+      res.send(error);
     } else {
       console.log('sucess');
     }

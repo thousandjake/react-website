@@ -28849,6 +28849,8 @@
 	  displayName: 'Contact',
 	
 	  handleContactFormSubmit: function handleContactFormSubmit(contactData) {
+	    var submitStatus = document.getElementById('submitStatus');
+	    submitStatus.innerHTML = '';
 	    console.log(contactData);
 	    _jquery2.default.ajax({
 	      url: '/contactMessage',
@@ -28857,9 +28859,13 @@
 	      data: contactData,
 	      success: function (data) {
 	        console.log(data);
+	        submitStatus.setAttribute('status', 'success');
+	        submitStatus.innerHTML = 'Form Successfully Submitted!';
 	      }.bind(this),
 	      error: function (xhr, status, err) {
 	        console.error(this.props.url, status, err.toString());
+	        submitStatus.setAttribute('status', 'error');
+	        submitStatus.innerHTML = 'Sumission Error: ' + err.toString();
 	      }.bind(this)
 	    });
 	  },
@@ -30605,44 +30611,47 @@
 	    if (!person || !company || !email || !message) {
 	      return;
 	    }
+	
 	    this.props.onContactFormSubmit({
 	      person: person,
 	      company: company,
 	      email: email,
 	      message: message
 	    });
+	
 	    this.setState({ person: '', company: '', email: '', message: '' });
 	  },
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'form',
 	      { className: 'contactForm', onSubmit: this.handleSubmit },
+	      _react2.default.createElement('div', { id: 'submitStatus' }),
 	      _react2.default.createElement('input', {
 	        required: true,
 	        type: 'text',
 	        placeholder: 'Your Name',
-	        value: this.setState.person,
+	        value: this.state.person,
 	        onChange: this.handlePersonChange
 	      }),
 	      _react2.default.createElement('input', {
 	        required: true,
 	        type: 'text',
 	        placeholder: 'Your Company',
-	        value: this.setState.company,
+	        value: this.state.company,
 	        onChange: this.handleCompanyChange
 	      }),
 	      _react2.default.createElement('input', {
 	        required: true,
 	        type: 'email',
 	        placeholder: 'Your Email',
-	        value: this.setState.email,
+	        value: this.state.email,
 	        onChange: this.handleEmailChange
 	      }),
 	      _react2.default.createElement('textarea', {
 	        required: true,
 	        name: 'message',
 	        placeholder: 'Your Message',
-	        value: this.setState.company,
+	        value: this.state.message,
 	        cols: '80',
 	        rows: '10',
 	        onChange: this.handleMessageChange

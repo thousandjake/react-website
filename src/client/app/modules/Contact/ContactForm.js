@@ -26,48 +26,52 @@ export default React.createClass({
     if (!person || !company || !email || !message) {
       return;
     }
+
     this.props.onContactFormSubmit({
       person: person,
       company: company,
       email: email,
       message: message
     });
+
     this.setState({person: '', company: '', email: '', message: ''});
+
   },
   render: function() {
     return (
       <form className="contactForm" onSubmit={this.handleSubmit}>
+        <div id="submitStatus"></div>
         <input
           required
           type="text"
           placeholder="Your Name"
-          value={this.setState.person}
+          value = {this.state.person}
           onChange={this.handlePersonChange}
         />
         <input
           required
           type="text"
           placeholder="Your Company"
-          value={this.setState.company}
+          value = {this.state.company}
           onChange={this.handleCompanyChange}
         />
         <input
           required
           type="email"
           placeholder="Your Email"
-          value={this.setState.email}
+          value={this.state.email}
           onChange={this.handleEmailChange}
         />
-      <textarea
+        <textarea
           required
           name="message"
           placeholder="Your Message"
-          value={this.setState.company}
+          value={this.state.message}
           cols="80"
           rows="10"
           onChange={this.handleMessageChange}
         />
-      <input type="submit" value="Submit" />
+        <input type="submit" value="Submit" />
       </form>
     );
   }
