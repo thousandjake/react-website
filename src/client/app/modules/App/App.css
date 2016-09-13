@@ -126,12 +126,22 @@ textarea {
 	margin: 10px;
 }
 
-input:valid {
+input[type=text]:valid {
 	border-color: green;
 	border-style: double;
 }
 
-input:invalid {
+input[type=text]:invalid {
+	border-color: red;
+	border-style: double;
+}
+
+input[type=email]:valid {
+	border-color: green;
+	border-style: double;
+}
+
+input[type=email]:invalid {
 	border-color: red;
 	border-style: double;
 }
