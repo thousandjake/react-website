@@ -28759,22 +28759,26 @@
 	          'Project Euler Website'
 	        ),
 	        _react2.default.createElement(
-	          'ul',
-	          { className: 'skills' },
+	          'div',
+	          null,
 	          _react2.default.createElement(
-	            'li',
-	            null,
-	            'Looping'
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            'Array Manipulation'
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            'Recursion'
+	            'ul',
+	            { className: 'skills' },
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Looping'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Array Manipulation'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Recursion'
+	            )
 	          )
 	        ),
 	        _react2.default.createElement(

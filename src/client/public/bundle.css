@@ -163,16 +163,20 @@ textarea:invalid {
 	margin: 0;
 }
 
+.skill {
+  max-width: 1200px;
+	margin:0 auto;
+}
+
 .skills li {
-	display: inline;
+	display: inline-block;
 	border-radius: 25px;
 	text-align: center;
 	padding: 10px 15px;
-	font-size: .95em;
 	background-color: #50608F;
 	color: white;
 	text-transform: uppercase;
-
+	float: center;
 }
 
 .wrapper {

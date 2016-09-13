@@ -49,11 +49,13 @@ export default React.createClass({
           <a href="https://github.com/thousandjake/euler-project-problems">My Euler Problems Github Page</a>
           <span> - </span>
           <a href="https://projecteuler.net/">Project Euler Website</a>
-          <ul className='skills'>
-            <li>Looping</li>
-            <li>Array Manipulation</li>
-            <li>Recursion</li>
-          </ul>
+          <div>
+            <ul className='skills'>
+              <li>Looping</li>
+              <li>Array Manipulation</li>
+              <li>Recursion</li>
+            </ul>
+          </div>
           <a href="https://github.com/thousandjake/euler-project-problems">
             <img className='projectThree' src={projectThree} alt='Project Euler Code'/>
           </a>
