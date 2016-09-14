@@ -6,14 +6,13 @@ export default React.createClass({
   handleContactFormSubmit: function (contactData) {
     var submitStatus = document.getElementById('submitStatus');
     submitStatus.innerHTML = '';
-    console.log(contactData);
     $.ajax({
       url: '/contactMessage',
       dataType: 'json',
       type: 'POST',
       data: contactData,
-      success: function(data) {
-        console.log(data);
+      success: function(success) {
+        console.log(success);
         submitStatus.setAttribute('status','success');
         submitStatus.innerHTML = 'Form Successfully Submitted!';
       }.bind(this),

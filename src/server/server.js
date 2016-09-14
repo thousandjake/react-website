@@ -51,6 +51,7 @@ app.post('/contactMessage', function(req, res){
       res.send(error);
     } else {
       console.log('sucess');
+      res.send(info);
     }
   })
 })
