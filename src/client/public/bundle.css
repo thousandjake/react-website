@@ -257,6 +257,7 @@ textarea:invalid {
 	.wrapper {
 		width: 90%;
 		margin: 0 auto;
+		min-height: 100%;
 	}
 
 }
@@ -266,6 +267,7 @@ textarea:invalid {
 	.wrapper {
 		width: 80%;
 		max-width: 1150px;
+		min-height: 100%;
 	}
 
 }
